@@ -2,8 +2,77 @@
 <html>
 <head>
 	<title>my login</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="./genstyle.css">
 </head>
 <body>
-this is my login information
+<div id= "sidebar">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">
+		<img class="clside" src="images/closeIcon.svg" alt="Menu"/>
+	 </a>
+	<a href="">
+		<img class="mimage" src="images/foodLogo.svg" alt="Menu"/>
+	</a>
+	<a href="sitem">Home</a>
+	<a href="sitem">About</a>
+	<a href="sitem">Gallery</a>
+	<a href="sitem">Contact</a>
+</div>
+<span onclick="openSidebar()"> 
+	<img class="mimage" src="images/menu.svg" id="mbutton" alt="Menu"/>
+</span>
+
+
+<div id="main">
+	<div id="intro" class="section">
+		<span>
+			<img  id="introImg" src="images/foodLogo.svg"/>
+			<p>Custom welding.</p>
+		 </span>
+		 
+	</div>
+
+	<div id="about" class="container">
+		<div class="row">
+
+			<div  class="col">
+				<h1>About Us</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus est ante, eleifend consequat elementum quis, mollis eget enim. Proin ut augue nibh. Etiam neque mauris, porta nec sem ut, tristique cursus purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam rhoncus leo id nunc consectetur, quis rhoncus risus tristique. Nulla facilisis cursus ullamcorper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas lacinia tellus et lectus venenatis ornare. Quisque dictum elit turpis, vel eleifend mi viverra eu.</p>
+			</div>
+			<div  class="col">
+				<img id="himage" src="images/sparksbg.jpg">
+			</div>
+
+		</div>
+		<!-- row-->
+	</div>
+		<!-- about-->
+
+	<div id="gallery" class="container">
+
+		<div class="row">
+
+			<div  class="col">
+			<img  src="images/welder.jpeg">
+			</div>
+			<!--column -->
+			<div class="col">
+				<h1>Gallery</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus est ante, eleifend consequat elementum quis, mollis eget enim. Proin ut augue nibh. Etiam neque mauris, porta nec sem ut, tristique cursus purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam rhoncus leo id nunc consectetur, quis rhoncus risus tristique. Nulla facilisis cursus ullamcorper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas lacinia tellus et lectus venenatis ornare. Quisque dictum elit turpis, vel eleifend mi viverra eu.</p>
+				</p>
+				<br>
+				<button id="bttn" type="button" class="btn btn-lg">View Gallery</button>
+			</div>
+			<!-- column-->
+		</div>
+		<!-- row-->
+	</div>
+	<!-- gallery-->
+</div>
+	<!-- main-->
+
+<script src="mwork.js"></script>
 </body>
 </html>
