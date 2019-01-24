@@ -1,0 +1,104 @@
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Roboto Mono', monospace;
+	background-color: #fff8f0;
+}
+
+#sidebar {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	padding-bottom: 60px;
+	transition: 0.5s;
+	text-align: center;
+}
+
+#sidebar a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+#sidebar a:hover {
+	color: #f1f1f1;
+}
+
+#sidebar .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+#main {
+	transition: margin-left .5s;
+}
+.section {
+	height: 100vh;
+}
+
+img.mimage {
+	height: 2em;
+	width: 2em;
+}
+
+#sidebar img.mimage {
+	margin-top: 50%;
+
+}
+
+img.clside {
+	height: 0.5em;
+	width: 0.5em;
+}
+
+@media screen and (max-height: 450px) {
+	#sidebar {padding-top: 15px;}
+	#sidebar a { font-size: 18px; }
+	#intro > span { font-size: 1em; }
+}
+
+span > .mimage {
+	position: fixed;
+	top: 50%;
+	left: 2%;
+	z-index: 1;
+}
+
+#intro {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#intro > span {
+	font-size: 3em;
+	vertical-align: center;
+}
+#intro span #introImg {
+	height: 50%;
+	width: 50%;
+
+}
+
+.row {
+	width: 100%;
+}
+#about {
+	padding-bottom: 5em;
+}
+#bttn{
+	background-color: #393e41;
+	color: #fff8f0;
+}
